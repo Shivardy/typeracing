@@ -1,5 +1,6 @@
 import { SkeletonTheme } from "react-loading-skeleton";
 import styled, { ThemeProvider } from "styled-components";
+import TypeZone from "./components/TypeZone";
 import { appContext } from "./services/AppContext";
 import { getTheme, GlobalStyles } from "./styles/theme";
 
@@ -8,16 +9,14 @@ const Container = styled.div`
   justify-content: space-around;
 `;
 const CenterContent = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   display: grid;
   grid-auto-flow: row;
   min-height: 100vh;
   padding: 2rem;
   padding: ${(props) => props.theme.size.xxxl};
   gap: ${(props) => props.theme.size.xxxl};
-  color: ${(props) => props.theme.colors.brand};
   align-items: center;
-  grid-template-rows: auto 1fr auto;
   width: 100%;
 `;
 
@@ -34,7 +33,7 @@ function App() {
       >
         <Container>
           <CenterContent>
-            <h1>Shiva</h1>
+            <TypeZone />
           </CenterContent>
         </Container>
       </SkeletonTheme>

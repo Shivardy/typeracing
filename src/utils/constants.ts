@@ -1,6 +1,6 @@
 export const initialState: any = {};
 
-const Common300 = [
+export const Common300 = [
   "the",
   "more",
   "sentence",
@@ -302,7 +302,7 @@ const Common300 = [
   "door",
   "main",
 ];
-const Common1000 = [
+export const Common1000 = [
   "as",
   "I",
   "his",
